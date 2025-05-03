@@ -1,0 +1,26 @@
+inventory_project/
+├── manage.py
+├── inventory_project/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   ├── asgi.py
+├── inventory_api/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   ├── urls.py
+│   ├── permissions.py  # Custom permissions
+│   ├── migrations/
+│   │   └── __init__.py
+│   └── tests/
+│       ├── __init__.py
+│       ├── test_models.py
+│       ├── test_serializers.py
+│       ├── test_api.py        # Integration tests
+├── requirements.txt
+└── README.md              # (Optional but recommended)

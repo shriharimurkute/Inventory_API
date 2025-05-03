@@ -1,0 +1,53 @@
+body {
+    background-color: #f8f9fa;
+    transition: background-color 0.5s ease;
+}
+
+/* Simple fade-in animation for loaded content */
+#inventorySection.loaded {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Style table actions */
+.action-btn {
+    cursor: pointer;
+    margin-right: 5px;
+    transition: transform 0.2s ease;
+}
+.action-btn:hover {
+    transform: scale(1.1);
+}
+.btn-edit {
+    color: #0d6efd; /* Bootstrap primary */
+}
+.btn-delete {
+    color: #dc3545; /* Bootstrap danger */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    /* Add more responsive styles if needed */
+}
+
+/* Modal animation (Bootstrap handles basic fade) */
+.modal.fade .modal-dialog {
+    transition: transform .3s ease-out;
+    transform: translate(0, -50px); /* Start slightly above */
+}
+.modal.show .modal-dialog {
+    transform: none; /* End at normal position */
+}
+
+/* Add hover effect to table rows */
+#inventoryTableBody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Subtle hover */
+}
